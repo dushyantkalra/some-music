@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(245, 200, 77);
+
+}
+header h1{
+    text-align: center;
+    font-size: 40px;
+    margin: 2rem;
+}
+header p{
+    font-size: 20px;
+}
+.keys{
+    
+    height: 22vh;
+    width: 95vw;
+    display:flex ;
+
+}
+.keys > div{
+    height: 22vh;
+    flex : 1;
+    cursor: pointer;
+    pointer-events: all;
+    z-index: 2;
+}
+.key-1{
+    background: #73a4ec;
+}
+.key-2{
+    background: #f16191;
+}
+.key-3{
+    background: #a51ec0;
+}
+.key-4{
+    background: #46ec6a;
+}
+.key-5{
+    background: #e5f04e;
+}
+.key-6{
+    background: #f37d4e;
+}
+.visuals > div{
+    height: 7vh;
+    width: 7vh;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0%;
+    left: 20%;
+}
+@keyframes fly{
+    0%{
+        bottom: 0%;
+        left: 20%;
+    }
+    50%{
+        bottom: 50%;
+        left: 50%;
+    }
+    100%{
+        bottom: 0%;
+        left: 100%;
+    }
+}
